@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64px" height="56px" viewBox="0 0 64 56" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>icons/values/ballance</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="01_hp-contries" transform="translate(-897.000000, -1817.000000)">
+            <g id="content2" transform="translate(0.000000, 1594.000000)">
+                <g id="2" transform="translate(739.000000, 211.000000)">
+                    <g id="icons/values/ballance" transform="translate(150.000000, 0.000000)">
+                        <rect id="Rectangle-path" fill-rule="nonzero" x="0.154074074" y="0.154074074" width="79.6918519" height="79.6918519" rx="4"></rect>
+                        <g id="Group" transform="translate(9.477778, 12.530000)" stroke="#163E66">
+                            <path d="M30,0 L30,49.852963" id="Shape" stroke-linecap="square"></path>
+                            <path d="M16.2785185,54 L44.7659259,54" id="Shape" stroke-linecap="square"></path>
+                            <path d="M0,24 L24.4177778,24" id="Shape"></path>
+                            <path d="M36.6266667,24 L61.0444444,24" id="Shape"></path>
+                            <path d="M48.8355556,6.10444444 L36.6266667,24.4177778 C36.6266667,28.7081848 40.6962963,34.5918519 48.8355556,34.5918519 C56.9748148,34.5918519 61.0444444,28.7081848 61.0444444,24.4177778 L48.8355556,6.10444444 L12.2088889,6.10444444 L0,24.4177778 C0,28.7081848 4.06962963,34.5918519 12.2088889,34.5918519 C20.3481481,34.5918519 24.4177778,28.7081848 24.4177778,24.4177778 L12.2088889,6.10444444" id="Shape"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

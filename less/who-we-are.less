@@ -1,0 +1,204 @@
+.who-we-are {
+	position: relative;
+	width: 100%;
+	background-color: @silver; 
+	padding-left: 20px;
+	padding-right: 20px;
+	h2 {
+		margin: 0 auto;
+		margin-top: 40px;
+		max-width: 700px;
+		font-size: 36px;	
+		font-weight: 300;
+		line-height: 48px;
+		color: @driftwood;
+		font-family: 'Adobe Garamond Italic', serif;
+		text-transform: none;
+		@media @mobile {
+			font-size: 32px;
+			margin-top: 15px;
+		}
+	}
+	.path {
+		width: 270px;
+		height: 15px;
+		margin-top: 65px;
+		background-image: url(../assets/gold-v1.png);
+		
+		@media @mobile {
+			width: 178px;
+			margin-top: 35px;
+		}
+	}
+
+	.block-info-wrap {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		// flex-direction: column;
+		max-width: 890px;
+		min-height: 150px;
+		.center-relative;
+		margin-top: 130px;
+		padding-bottom: 150px;
+		transition: 0.9;
+		@media @mobile {
+			margin-top: 65px;
+			padding-bottom: 0;
+		}
+
+		.block {
+			position: relative;
+			height: 150px;
+			border: 1px solid #B48346;
+			// margin: 0 50px;
+			flex-shrink: 0;
+			width: 230px;
+			display: flex;
+			justify-content: center;
+			
+
+			.visible-info {
+				min-height:  150px;
+				width: 230px;
+				position: relative;
+				display: flex;
+				.number {
+					position: absolute;
+					width: 90px;
+					top: -25px;
+					left: 50%;
+					transform: translateX(-50%);
+					font-size: 48px;	
+					font-weight: bold;	
+					line-height: 48px;
+					text-align: center;
+					z-index: 10;
+					background-color: @silver;
+					color: @driftwood;
+					font-family: 'Adobe Garamond Pro', serif;
+				}
+				.text {
+					width: 100%;
+					margin: auto;
+					color: @driftwood;			
+					line-height: 32px;
+					text-align: center;
+				}
+			}
+
+			.hidden-info {
+				display: none;
+				margin: 15px;
+				padding-left: 70px;
+				border-left: 1px solid @driftwood;
+				ul {
+					display: flex;
+					flex-wrap: wrap;
+					flex-direction: column;
+					color: @driftwood;
+					height: 100%;
+					align-content: space-between;
+					li {
+						flex: 1 0 auto;
+						margin-right: 30px;
+					}
+				}
+			}
+
+
+			.plus{				
+				width: 65px;				
+				position: absolute;		
+				bottom: -25px;
+				z-index: 10;
+				background-color: @silver;
+				 
+				button {
+					@size: 50px;
+					position: relative;
+					display: block;
+					width: @size;
+					height: @size;
+					border: solid 1px @driftwood; 
+					margin: 0 auto;
+					color: @driftwood;
+					background: transparent;
+					font-weight: 300;
+					text-align: center;
+					line-height: @size;
+					border-radius: 50%;
+					font-size: 36px;
+					text-decoration: none;
+					outline: none;
+					&:hover {
+						transition: 0.2s;
+						transform: scale(1.15);
+					}
+					&:active {
+						transition: 0.2s;
+						transform: rotate(45deg);
+					}
+				}
+			}		
+		}
+
+		.js-companies.show, .js-fields.show{
+			height: 200px;
+			@media (max-width: 1024px)	{
+				height: auto;
+			}
+		}
+
+		////////////////////////////////////
+		.show {
+			display: flex;
+			width: 100%;
+			
+			.hidden-info {
+				display: block;
+				flex: 1;
+			}
+
+			.plus {
+				height: 50px;
+				width: 50px;
+				top: -25px;
+				right: -25px;
+				transform: scale(0.8) rotate(45deg);
+			}
+			@media (max-width: 1024px)	{
+				width: auto;
+				max-width: 99%;
+				min-width: 50%;
+			}
+		}
+		
+		@media (max-width: 1024px)	{
+			max-width: 90%;
+			justify-content: space-around;
+			.block {
+				flex-direction: column;
+				align-items: center;
+				height: auto;
+				margin-bottom: 70px;
+			
+				.hidden-info {
+					border-left: none;
+					border-top: 1px solid @driftwood;
+					padding: 20px 0  0 30px;
+					margin-top: 0;
+
+					ul {
+					
+						li {
+							font-size: 16px;
+						}
+					}
+				}
+			}
+		}
+
+	}
+
+}

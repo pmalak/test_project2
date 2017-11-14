@@ -1,0 +1,119 @@
+.contact {
+	background-color: @silver;
+	color: @dark-blue;
+	padding-bottom: 170px;
+	@media @mobile {
+		padding-bottom: 0;
+		background-color: #fff;
+	}
+	
+	.path {
+		width: 88px;
+		margin-top: 27px;
+		background-image: url(../assets/blue-v.png);
+	}
+
+	.form-wrap {
+		position: relative;
+		margin: 0 auto;
+		max-width: 607px;
+		background-color: #FFFFFF;
+		margin-top: 54px;
+		padding-top: 77px;
+		padding-bottom: 66px;
+		@media @mobile {
+			padding: 20px 0;
+			background-color: #fff;
+		}
+
+		form {
+			position: relative;
+			margin: 0 auto;
+			max-width: 380px;
+			
+			.form-row {
+				position: relative;
+				display: flex;
+				width: 100%;
+				margin-bottom: 35px;
+				
+				img {
+					position: relative;
+					width: 35px;
+					height: 35px;
+					margin-right: 15px;
+				}
+
+				div {
+					position: relative;
+					flex: 1;
+					min-height: 35px;
+					border-bottom: 1px solid @dark-blue;
+
+					label {
+						position: absolute;
+						left: 0;
+						top: 0;
+						height: 100%;
+						transition: 0.3s;
+
+					}
+
+					input, textarea {
+						position: relative;
+						display: block;
+						width: 100%;
+						min-height: 100%;
+						background-color: transparent;
+						transition: 0.5s;
+						border: none;
+						font-size: 16px;
+						z-index: 5;
+						outline: none;
+						resize  : none;
+ 						
+					}
+				
+					textarea {
+						rows: 1;
+					}
+				}
+			}
+
+			button {
+				display: block;
+				position: relative;
+				margin: 0 auto;	
+				height: 43px;	
+				width: 237px;	
+				border: 2px solid @driftwood;
+				color: #B48346;
+				font-size: 14px;
+				font-weight: bold;
+				letter-spacing: 1px;
+				line-height: 21px;
+				text-transform: uppercase;
+				background: #fff;
+				margin-top: 62px;
+				transition: .4s;
+				&:hover {
+					transform: scale(1.05) translateY(-3px);
+					box-shadow: 3px 2px 5px 0 rgba(13,13,13,.2);
+					
+				}
+				&:active {
+					transform: translateY(3px) scale(1);
+					outline: none;
+					transition: .2s;
+				}
+			}
+		}
+
+	}
+}
+
+// .label-lift {
+// 	transform: scale(0.75);
+// 	top: -25px;
+//  	left: -15px;
+// }

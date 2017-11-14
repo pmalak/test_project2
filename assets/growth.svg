@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64px" height="62px" viewBox="0 0 64 62" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>icons/values/growth</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="01_hp-contries" transform="translate(-451.000000, -2225.000000)">
+            <g id="content2" transform="translate(0.000000, 1594.000000)">
+                <g id="3" transform="translate(294.000000, 622.000000)">
+                    <g id="icons/values/growth" transform="translate(149.000000, 0.000000)">
+                        <rect id="Rectangle-path" fill-rule="nonzero" x="0.154074074" y="0.154074074" width="79.6918519" height="79.6918519" rx="4"></rect>
+                        <g id="Group" transform="translate(9.477778, 10.495185)" stroke="#163E66">
+                            <rect id="Rectangle-path" stroke-linecap="square" x="23.4003704" y="34.5918519" width="14.2437037" height="24.4177778"></rect>
+                            <rect id="Rectangle-path" stroke-linecap="square" x="0" y="46.8007407" width="14.2437037" height="12.2088889"></rect>
+                            <rect id="Rectangle-path" stroke-linecap="square" x="46.8007407" y="22.382963" width="14.2437037" height="36.6266667"></rect>
+                            <polyline id="Shape" points="8.13925926 24.4177778 20.3481481 12.2088889 30.5222222 22.382963 52.9051852 0"></polyline>
+                            <polyline id="Shape" stroke-linecap="square" points="38.6614815 0 52.9051852 0 52.9051852 14.2437037"></polyline>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

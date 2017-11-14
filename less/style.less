@@ -1,0 +1,143 @@
+
+@dark-blue: #163E66;
+@light-blue: #4A90E2;
+@driftwood: #B48346;
+@silver: #F7F5F7;
+
+
+@highdensity: ~"only screen and (-webkit-min-device-pixel-ratio: 1.5)",
+              ~"only screen and (min--moz-device-pixel-ratio: 1.5)",
+              ~"only screen and (-o-min-device-pixel-ratio: 3/2)",
+              ~"only screen and (min-device-pixel-ratio: 1.5)";
+@mobile:      ~"only screen and (max-width: 529px)";
+@tablet:      ~"only screen and (min-width: 530px) and (max-width: 949px)";
+@desktop:     ~"only screen and (min-width: 950px) and (max-width: 1128px)";
+@desktop-xl:  ~"only screen and (min-width: 1129px)";
+
+
+
+
+@font-face {
+  font-family: "Adobe Garamond Pro";
+  src: url("../fonts/Adobe Garamond Pro Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Adobe Garamond Italic";
+  src: url("../fonts/Adobe Garamond Pro Italic.ttf") format("truetype");
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-size: 20px;
+	font-family: 'Poppins', sans-serif;
+}
+
+
+h1, h2, h3 {
+	text-align: center;
+	font-family: 'Adobe Garamond Pro', serif;
+}
+
+h1{
+	color: @driftwood;
+	font-family: 'Adobe Garamond Italic', serif;
+	font-size: 96px;
+	font-weight: 300;
+	margin: 0;
+	@media (max-width: 840px) {
+		font-size: 72px;
+	}
+	@media @mobile {
+		font-size: 56px;
+	}
+}
+
+h2 {
+	font-size: 24px;
+	font-weight: 300;
+	text-transform: uppercase;
+	margin-bottom: 27px;
+}
+
+h3 {
+	font-size: 48px;
+	font-weight: bold;
+	line-height: 48px;
+}
+
+section {
+	padding-top: 110px; 
+	@media @mobile {
+		padding-top: 50px; 
+	}
+}
+
+.center-relative{
+	margin: 0 auto;
+	position: relative;
+}
+
+.path {
+		height: 15px;	
+		margin: 0 auto; 
+		position: relative;		
+	}
+
+.main-wrap {
+	max-width: 1376px;
+	margin: 0 auto;
+	@media (max-width: 1376px) {
+		padding: 15px;
+	}
+}
+
+.hero, .hero-mobile{
+	width: 100%;
+	position: relative;
+	margin-top: 156px;
+	display: block;
+}
+
+.hero-mobile{
+	@media @desktop {
+		display: none;
+	}
+
+	@media @desktop-xl {	
+		display: none;
+	}
+}
+
+.hero {
+	@media @tablet {
+		display: none;
+	}
+
+	@media @mobile {
+		display: none;	
+	} 
+	
+}
+
+@import "navbar";
+@import "who-we-are";
+@import "values&about-us"; 
+@import "contact"; 
+
+footer {
+	div{
+		margin-top: 40px;
+		display: flex;
+		justify-content: center;
+		@media @mobile {
+			margin: 0 0 20px 0;	
+		} 
+		a {
+			display: block;
+			margin: 15px;
+		}
+		
+	}
+}

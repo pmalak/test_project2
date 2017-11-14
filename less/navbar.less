@@ -1,0 +1,126 @@
+nav {
+	position: fixed;
+	z-index: 50;
+	top: 0;
+	width: 100%;
+	height: 156px;
+	background-color: #fff;
+	display: flex;
+	
+	.logo {
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+			background: url("../assets/rc-investment-logo.svg") center no-repeat;
+			background-size: contain;
+			height: 98px;	
+			width: 90px;		
+			}
+
+	ul {		
+		flex-basis: 900px;		
+		height: auto;
+		margin: auto;
+		list-style: none;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		overflow: hidden;
+		
+		
+		li {
+			flex: 1;
+			margin: 0 30px;
+			
+			a {		
+				display: block;		
+				color: @dark-blue;
+				font-size: 14px;
+				height: 20px;
+				line-height: 20px;
+				text-decoration: none;
+				text-transform: uppercase;
+				font-weight: 300;
+				
+				&:hover {
+					color: @light-blue;
+					font-weight: bold;
+				}	
+				
+			}			
+		}			
+	@media (max-width: 840px)	{
+			display: none;
+			position: absolute;
+			right: 0; 
+			top: 0; 
+			padding-top: 100px;
+			width: 50vw;
+			height: 100vh;
+			background-color: @dark-blue;
+			text-align: center;
+
+			li {
+				margin-bottom: 50px;				
+				&:nth-last-child(3){
+					display: none;
+				}
+				
+				a {
+					font-size: 0.8em;
+					color: #fff;
+				}
+			}
+		}	
+	}
+
+	#nav-toggle{
+		position: absolute;
+		right: 0px;
+		cursor: pointer;
+		padding: 27px 50px 33px 12px;
+		display: block;
+		@media (min-width: 840px)	{
+			display: none;
+		}
+	}
+
+	#nav-toggle span , #nav-toggle span:before , #nav-toggle span:after{
+		position: absolute;
+		content: '';
+		display: block;
+		background: @driftwood;
+		width: 25px;
+		height: 3px;
+		border-radius: 1px;
+		transition: all 400ms ease;
+		z-index: 50;
+	}
+
+	#nav-toggle span:before{
+		top: -8px;
+	}
+	#nav-toggle span:after{
+		bottom: -8px;
+	}
+	#nav-toggle.active span:before, #nav-toggle.active span:after {
+	  top: 0;
+	  background-color: white;
+	}
+	#nav-toggle.active span{
+		background: transparent;
+	}
+	#nav-toggle.active span:before{
+		transform: rotate(45deg);
+	}
+	#nav-toggle.active span:after{
+		transform: rotate(-45deg);
+	}
+}
+
+.shadow {
+		// box-shadow: 0 2px 3px 1px rgba(169, 169, 169, 0.5);
+		box-shadow: 0 0 9px 0 rgba(0,0,0,.3);
+	}
+
